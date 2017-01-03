@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<template
+    format="5"
+    name="Screen"
+    description="make screen"
+    revision="1">
+
+    <category value="MyTemplates"/>
+
+    <parameter
+        name="Class Name"
+        constraints="unique|nonempty"
+        default="ClassName"
+        id="className"
+        type="string"/>
+
+    <parameter
+        name="Resource Name"
+        constraints="unique|nonempty"
+        default="resName"
+        id="resName"
+        type="string"/>
+
+    <globals file="globals.xml.ftl"/>
+    <execute file="recipe.xml.ftl"/>
+
+</template>
